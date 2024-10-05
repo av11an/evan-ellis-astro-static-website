@@ -1,0 +1,64 @@
+---
+title: 'Getting this Website Started'
+description: 'Astro with AWS Amplify'
+pubDate: 'Oct 3 2024'
+heroImage: '/images/blog-placeholder-about.jpg'
+---
+
+# Why? 
+
+I've had this idea for a while, like many *junior* developers probably do, to create a personal
+blog. A space not only to share my work with others but also to showcase my skills.
+
+It feels almost like a rite of passage in the journey to becoming a well-rounded developer. I
+wanted a place where I could document my projects and progress over the years, and hopefully
+maintain a semi-consistent posting schedule.
+
+After finally finding some time to decide how I wanted to build this simple blog, I got started.
+
+# How?
+
+<img src="/images/astro-logo.png" width="300" />
+
+I noticed a lot of buzz around using Astro for static or blog-like websites, which is what drew
+ me to it. If you've ever used Astro with a template, you might have already recognized that
+  this site was built using the blog template (at least as of the time this article is published).
+
+Several things about Astro made me choose it over other frameworks. One key factor is its
+flexibility—I'm not locked into React, and I have the option to explore different templates.
+Or, if I’m feeling adventurous, I can stick with plain old HTML. Another aspect that attracted
+me is Astro's focus on performance. While performance isn't a major concern for the simple
+content on my site right now, it positions me well to work on more advanced features in the
+future without worrying about performance issues.
+
+<img src="/images/aws-amplify-logo.png" width="300" />
+
+For deployment, I decided to use AWS Amplify. Initially, my plan was to stick with the standard
+S3 + CloudFront setup, deploying with a simple command like:
+
+```
+aws s3 sync .....
+```
+
+And there was also documentation for linking it up to a GitHub repository and syncing it
+automatically. But what led me to using Amplify was its dead simplicty. It was literally just
+link to GitHub repo, deploy site. I then grabbed a custom domain name using Route 53 and just as
+easily linked it to Amplify.
+
+All of which would have been pretty straight forward the manual way but since I believed I already
+understood what would go into created it like that I felt comfortable using the simplifed way. This
+leads me into some weird comprimises in my brain I had to make. I like to sometimes go the route where
+I am given more control. I didn't want to use just any website hosting platform, I wanted to own the
+resources. 
+
+Using Amplify kind of meets in the middle of me owning the resources but adds the speed of development.
+In the future this may change if I want to introduce more *dynamic* content.
+
+# Plans for the Future
+
+I would love to do a total overhaul on the style of this website and make it more personal. I really just used
+the default blog template and although it gets the job done, I want it to reflect my personality.
+
+Thank you for reading this short post, if you need to get a hold of me my Twitter/X links are at the 
+header and footer of this website!
+
