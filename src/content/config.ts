@@ -13,7 +13,7 @@ const blog = defineCollection({
 	}),
 });
 
-const book = defineCollection({
+const moto = defineCollection({
 	type: 'content',
 	// Type-check frontmatter using a schema
 	schema: z.object({
@@ -26,4 +26,4 @@ const book = defineCollection({
 	}),
 });
 
-export const collections = { blog, book };
+export const collections = { blog, moto };
